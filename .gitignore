@@ -12,7 +12,3 @@ build.gradle
 gradlew
 gradlew.bat
 settings.gradle
-
-# Organization of the project architecture
-src/main/
-!loupgarou/
