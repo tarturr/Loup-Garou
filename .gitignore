@@ -15,4 +15,4 @@ settings.gradle
 
 # Organization of the project architecture
 src/main/
-!src/main/java/fr/tartur/loupgarou/
+!loupgarou/
