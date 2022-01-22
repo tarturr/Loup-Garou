@@ -18,7 +18,9 @@ public class LoupGarou {
     }
 
     private static String getToken() {
-        File token = new File("C:/Users/Arthur/Documents/Développement/discbots-token/loup-garou.txt");
+        String path = "C:/Users/Arthur/Documents/Développement/discbots-token/loup-garou.txt";
+        System.out.println(path);
+        File token = new File(path);
 
         if (!token.exists()) {
             throw new RuntimeException("Le token du bot Discord n'a pas pu être trouvé ! :(");
@@ -28,7 +30,6 @@ public class LoupGarou {
             return new BufferedReader(new FileReader(token)).readLine();
         } catch (IOException e) {
             e.printStackTrace();
-            System.err.println("The token has not been found.");
             return null;
         }
     }

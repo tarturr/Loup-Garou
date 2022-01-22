@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.github.cdimascio:dotenv-java:2.2.3'
     implementation 'org.javacord:javacord:3.3.2'
 }
 
