@@ -1,9 +1,18 @@
+# IntelliJ IDEA settings
 .idea/
 build/
+
+# Secret token
+.env
+
+# Gradle files/folders
 .gradle/
 gradle/
 build.gradle
 gradlew
 gradlew.bat
 settings.gradle
-.env
+
+# Organization of the project architecture
+src/main/
+!src/main/java/fr/tartur/loupgarou/
