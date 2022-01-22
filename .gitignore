@@ -1,5 +1,4 @@
 .idea/
-assets/
 build/
 .gradle/
 gradle/
@@ -7,3 +6,4 @@ build.gradle
 gradlew
 gradlew.bat
 settings.gradle
+.env
