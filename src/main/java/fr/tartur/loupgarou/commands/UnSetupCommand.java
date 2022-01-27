@@ -30,7 +30,7 @@ public class UnSetupCommand implements MessageCreateListener {
                         if (role.getName().equals("Participant")) role.delete();
                     });
 
-                    event.getChannel().sendMessage(":white_check_mark: La configuration a bien Ã©tÃ© dÃ©sactivÃ©e ! Ã€ la prochaine !");
+                    event.getChannel().sendMessage(":white_check_mark: La configuration a bien été désactivée ! À la prochaine !");
                 }
             }
         }

@@ -4,7 +4,6 @@ import org.javacord.api.DiscordApi;
 import org.javacord.api.entity.channel.ChannelCategoryBuilder;
 import org.javacord.api.entity.message.MessageAuthor;
 import org.javacord.api.entity.permission.PermissionType;
-import org.javacord.api.entity.permission.Permissions;
 import org.javacord.api.entity.permission.PermissionsBuilder;
 import org.javacord.api.entity.permission.Role;
 import org.javacord.api.entity.server.Server;
@@ -64,22 +63,22 @@ public class SetupCommand implements MessageCreateListener {
 
                         builder.create();
 
-                        event.getChannel().sendMessage(":white_check_mark: La configuration du serveur a √©t√© " +
-                                "compl√©t√©e avec succ√®s ! Amusez-vous bien !");
+                        event.getChannel().sendMessage(":white_check_mark: La configuration du serveur a ÈtÈ " +
+                                "complÈtÈe avec succËs ! Amusez-vous bien !");
                     } catch (InterruptedException | ExecutionException e) {
                         e.printStackTrace();
                     }
                 } else {
                     if (user != null) {
                         event.getMessage().delete();
-                        user.sendMessage(":x: **" + user.getName() + "**, la configuration est d√©j√† activ√©e pour ce serveur !");
+                        user.sendMessage(":x: **" + user.getName() + "**, la configuration est dÈj‡ activÈe pour ce serveur !");
                     }
                 }
             } else {
                 event.getMessage().delete();
 
                 if (user != null) {
-                    user.sendMessage(":no_entry_sign: **" + user.getName() + "**, vous ne pouvez pas ex√©cuter cette commande !");
+                    user.sendMessage(":no_entry_sign: **" + user.getName() + "**, vous ne pouvez pas exÈcuter cette commande !");
                 }
             }
         }
