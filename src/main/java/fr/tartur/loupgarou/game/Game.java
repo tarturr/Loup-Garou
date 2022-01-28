@@ -10,5 +10,8 @@ public class Game {
     private final List<Entity> users;
     private final DayTime dayTime;
 
-
+    public Game(List<Entity> users, DayTime dayTime) {
+        this.users = users;
+        this.dayTime = dayTime;
+    }
 }
