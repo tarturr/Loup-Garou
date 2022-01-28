@@ -4,8 +4,8 @@ import org.javacord.api.entity.user.User;
 
 public abstract class Entity {
 
-    private final EntityType entityType;
-    private final User user;
+    protected final EntityType entityType;
+    protected final User user;
 
     public Entity(EntityType entityType, User user) {
         this.entityType = entityType;

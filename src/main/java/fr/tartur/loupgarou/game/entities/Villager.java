@@ -9,7 +9,5 @@ public class Villager extends Entity {
     }
 
     @Override
-    public void play() {
-
-    }
+    public void play() { }
 }
