@@ -21,4 +21,9 @@ public abstract class Entity {
     public User getUser() {
         return user;
     }
+
+    public void sendRole() {
+        user.sendMessage(entityType.getEmoji() + " Vous êtes **" + entityType.getName() + "** !");
+    }
+
 }
