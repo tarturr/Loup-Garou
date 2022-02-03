@@ -20,8 +20,8 @@ public class Witch extends Entity {
 
         EmbedBuilder embed = new EmbedBuilder()
                 .setTitle(super.entityType.getEmoji() + " " + super.entityType.getName() + " - " + super.user.getName())
-                .setDescription("\n*À toi de jouer !*\n")
-                .addField("Quel est votre choix ?", "Voici les possibilités :\n" +
+                .setDescription("\n*ï¿½ toi de jouer !*\n")
+                .addField("Quel est votre choix ?", "Voici les possibilitï¿½s :\n" +
                         ((!hasKilled) ? ":knife: - Tuer un adversaire.\n" : "") +
                         ((!hasResurrected) ? ":anatomical_heart: - Ressusciter un adversaire.\n" : "") +
                         ":no_entry: - Ne rien faire.\n")

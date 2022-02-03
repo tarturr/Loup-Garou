@@ -23,7 +23,7 @@ public abstract class Entity {
     }
 
     public void sendRole() {
-        user.sendMessage(entityType.getEmoji() + " Vous êtes **" + entityType.getName() + "** !");
+        user.sendMessage(entityType.getEmoji() + " Vous ï¿½tes **" + entityType.getName() + "** !");
     }
 
 }
